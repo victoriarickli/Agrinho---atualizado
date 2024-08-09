@@ -31,14 +31,22 @@ body {
 }
 
 .titulo-principal {
+  color var(--verde)
     text-align: center; /* Center text */
     width: 100%;
     font-size: 32px;
     margin-bottom: 20px; /* Add space below the title */
 }
 
+.aba-conteudo-referencia {
+    font-size: 8px;
+  text-align: left;
+}
+
 .titulo-principal h1 {
     margin: 0; /* Remove default margin */
+  text-align: center;
+  color: #00FF00;
 }
 
 .botao {
@@ -93,6 +101,7 @@ body {
     font-size: 20px;
     text-align: left;
     margin: 0 0 10px; /* Add margin below the title*/
+  color: #ADFF2F;
    
 }
 
