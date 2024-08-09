@@ -1,0 +1,119 @@
+:root {
+    --cor-de-fundo: hsl(151, 88%, 23%);
+    --verde: hsla(122, 96%, 44%, 0.551);
+    --branco: #FFFACD;
+    --botao-ativo: #a1de69;
+    --botao-inativo: rgba(58, 55, 94, 0.5);
+    --texto-fundo: rgba(58, 55, 94, 0.3);
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco);
+    font-family: 'Chakra Petch', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items at the start (top) of the viewport */
+    min-height: 100vh; /* Ensure body takes up at least the full viewport height */
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center;
+    max-width: 1500px;
+    width: 100%;
+    padding: 50px; /* Add padding around the content */
+    box-sizing: border-box;
+ 
+}
+
+.titulo-principal {
+    text-align: center; /* Center text */
+    width: 100%;
+    font-size: 32px;
+    margin-bottom: 20px; /* Add space below the title */
+}
+
+.titulo-principal h1 {
+    margin: 0; /* Remove default margin */
+}
+
+.botao {
+    font-family: 'Chakra Petch', sans-serif;
+    background-color: var(--botao-inativo);
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    font-size: 18px;
+    align-items: center;
+    width: 100%;
+    border-bottom: 4px solid var(--botao-ativo);
+    border-left: 2px solid var(--botao-ativo);
+    border-right: 2px solid var(--botao-ativo);
+    border-top: none;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+.botoes {
+    display: flex; /* Use flexbox for buttons to align horizontally */
+    flex-direction: column; /* Stack buttons vertically */
+    width: 100%;
+    /*margin-bottom: 20px; /* Add space below the buttons */
+}
+
+.botao:first-child {
+    border-radius: 40px 40px 0 0;
+}
+
+.botao.ativo {
+    background-color: var(--botao-ativo);
+    border-bottom: 4px solid var(--verde);
+}
+
+.abas-textos {
+    background-color: var(--texto-fundo);
+    padding: 40px;
+    border-radius: 0 0 40px 40px;
+    width: 50%; /* Ensure the content spans full width */
+}
+
+.aba-conteudo.ativo {
+    display: block;
+}
+
+.aba-conteudo {
+    display: none;
+}
+
+.aba-conteudo-titulo-principal {
+    font-size: 20px;
+    text-align: left;
+    margin: 0 0 10px; /* Add margin below the title*/
+   
+}
+
+.aba-conteudo-texto {
+    color: var(--verde);
+    margin: 0; /* Remove any default margin */
+      
+   
+}
+
+
+@media screen and (min-width: 768px) {
+    .botoes {
+        flex-direction: row; /* Align buttons horizontally on larger screens */
+    }
+
+    .botao:first-child {
+        border-radius: 40px 0 0 0;
+    }
+
+    .botao:last-child {
+        border-radius: 0 40px 0 0;
+    }
+}
