@@ -31,7 +31,7 @@ body {
 }
 
 .titulo-principal {
-  color: var(--verde);
+  color var(--verde)
     text-align: center; /* Center text */
     width: 100%;
     font-size: 32px;
@@ -41,6 +41,13 @@ body {
 .aba-conteudo-referencia {
     font-size: 8px;
   text-align: left;
+}
+
+.conteudo-subtitulo {
+  font-size: 18px;
+  text-align: left;
+  color: #ADFF2F;
+  margin: 0 0 10px; /* Add margin below the title*/
 }
 
 .titulo-principal h1 {
@@ -98,7 +105,7 @@ body {
 }
 
 .aba-conteudo-titulo-principal {
-    font-size: 20px;
+    font-size: 24px;
     text-align: left;
     margin: 0 0 10px; /* Add margin below the title*/
   color: #ADFF2F;
@@ -108,7 +115,7 @@ body {
 .aba-conteudo-texto {
     color: var(--branco);
     margin: 0; /* Remove any default margin */
-      
+      font-size: 15px;
    
 }
 
