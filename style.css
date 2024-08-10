@@ -31,7 +31,7 @@ body {
 }
 
 .titulo-principal {
-  color var(--verde)
+  color: var(--verde);
     text-align: center; /* Center text */
     width: 100%;
     font-size: 32px;
