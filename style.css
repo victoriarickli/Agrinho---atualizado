@@ -120,6 +120,7 @@ body {
 }
 img{
     width: 720px;
+    text-align: center;
     border-radius: 10px;
 }
 
